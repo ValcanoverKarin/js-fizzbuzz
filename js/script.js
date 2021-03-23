@@ -7,15 +7,15 @@
 for ( var i = 1; i < 100; i++ ) {
     var number = i;
 
-    //Fizz per i multipli di 3
-    if ( number % 3 == 0 ) {
-        number = 'Fizz';
+    //FizzBuzz per i multipli di 3 e 5  
+    if ( number % 3 == 0 && number % 5 == 0 ) {
+      number = 'FizzBuzz';
       //Buzz per i multipli di 5  
     } else if ( number % 5 == 0 ) {
         number = 'Buzz';
-      //FizzBuzz per i multipli di 3 e 5  
-    } else if ( number % 3 == 0 && number % 5 == 0 ) {
-        number = 'FizzBuzz';
+      //Fizz per i multipli di 3
+    } else if ( number % 3 == 0 ) {
+      number = 'Fizz';
     }
 
     console.log(number);
