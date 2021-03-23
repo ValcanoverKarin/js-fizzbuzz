@@ -4,17 +4,20 @@
 //Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz
 
 //programma che stampi i numeri da 1 a 100
-for (var i = 0; i < 100; i++) {
+for ( var i = 1; i < 100; i++ ) {
     var number = i;
 
-    //stampare Fizz per i multipli di 3
+    //Fizz per i multipli di 3
     if ( number % 3 == 0 ) {
-        number = 'Fizz'
-        console.log(number)
+        number = 'Fizz';
+      //Buzz per i multipli di 5  
+    } else if ( number % 5 == 0 ) {
+        number = 'Buzz';
+      //FizzBuzz per i multipli di 3 e 5  
+    } else if ( number % 3 == 0 && number % 5 == 0 ) {
+        number = 'FizzBuzz';
     }
+
+    console.log(number);
 }
 
-
-//stampare Buzz per i multipli di 5
-
-//stampare FizzBuzz per i multipli di 3 e 5
